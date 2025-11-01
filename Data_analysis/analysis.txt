@@ -1,0 +1,56 @@
+Summary statistics for each column:
+       transaction_id customer_id product_id product_name transaction_date  ... aesthetic_importance retail_price         cogs  review_star                                        review_text
+count            7380        7380       7380         7380             7380  ...                 7380  7380.000000  7380.000000  2827.000000                                               2827
+unique           5554        1436          8            8             1088  ...                    2          NaN          NaN          NaN                                                 18
+top          T0001715      C00898     GO_AIR  Aura Go Air       2023-10-14  ...                  Med          NaN          NaN          NaN  Battery and comfort are fantastic; a perfect s...
+freq                3          21       1197         1197               19  ...                 4699          NaN          NaN          NaN                                                348
+mean              NaN         NaN        NaN          NaN              NaN  ...                  NaN   499.173442   253.900352     4.192207                                                NaN
+std               NaN         NaN        NaN          NaN              NaN  ...                  NaN   469.854518   160.670202     0.495585                                                NaN
+min               NaN         NaN        NaN          NaN              NaN  ...                  NaN   180.000000   126.000000     2.150000                                                NaN
+25%               NaN         NaN        NaN          NaN              NaN  ...                  NaN   220.000000   149.600000     3.880000                                                NaN
+50%               NaN         NaN        NaN          NaN              NaN  ...                  NaN   280.000000   193.200000     4.190000                                                NaN
+75%               NaN         NaN        NaN          NaN              NaN  ...                  NaN   320.000000   211.200000     4.550000                                                NaN
+max               NaN         NaN        NaN          NaN              NaN  ...                  NaN  1500.000000   600.000000     5.000000                                                NaN
+
+[11 rows x 19 columns]
+
+Top 10 customers by lifetime value and their spending:
+customer_id
+C01459    17920
+C01184    14040
+C00844    12060
+C00716    11780
+C00898    11680
+C01349    11140
+C01375    10700
+C00204    10680
+C01265    10600
+C00057    10520
+Name: retail_price, dtype: int64
+
+Average product review by product:
+product_name
+Aura Pro Studio     4.658920
+Aura Pro X          4.649071
+Aura Pro Classic    4.638270
+Aura Go Plus        4.003964
+Aura Go Active      3.987383
+Aura Go Max         3.982480
+Aura Go Air         3.974072
+Aura Go Lite        3.967837
+Name: review_star, dtype: float64
+
+Total revenue by referring channel:
+referring_channel
+Search        786440
+ReviewSite    718660
+Social        582820
+Direct        571060
+Email         566140
+Affiliate     458780
+Name: retail_price, dtype: int64
+
+Total spent by premium customers: 2245300.00
+Total spent by mainstream customers: 1438600.00
+
+Mainstream ('Go') products as a % of all sales: 77.7%
